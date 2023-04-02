@@ -141,17 +141,58 @@ header {
 }
 
 .popup-wrapper {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 350px;
     background: #fff;
-    margin: 70px auto;
     padding: 20px;
+    overflow: auto;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: ani 0.5s forwards;
 }
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 .popup-wrapper form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 70%;
     margin: 0 auto;
+    font-size: 18px;
+}
+
+.popup-wrapper h2 {
+    text-align: center;
+}
+
+.popup-wrapper input, select {
+    padding: 5px 0;
+}
+
+.popup-wrapper #add-btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 45%;
+}
+
+.popup-wrapper #cancel-btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 45%;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }

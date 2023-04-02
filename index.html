@@ -34,24 +34,28 @@
             </div>
         </div>
     </main>
-    <div class="popup-add-item">
+    <div class="popup-add-item hidden">
         <div class="popup-wrapper">
             <h2>Добавить товар</h2>
             <form>
                 <label>Название товара</label>
                 <input type="text" id="title">
                 <label>Категория</label>
-                <select>
-                    <option>Одноразовые испарители</option>
-                    <option>POD-системы</option>
-                    <option>Жидкость</option>
-                    <option>Комплектующие</option>
-                    <option>Аксессуары</option>
+                <select id="categor">
+                    <option value="oes">Одноразовые испарители</option>
+                    <option value="pod">POD-системы</option>
+                    <option value="zhizha">Жидкость</option>
+                    <option value="coml">Комплектующие</option>
+                    <option value="acs">Аксессуары</option>
                 </select>
                 <label>Цена</label>
                 <input type="text" id="price">
                 <label>Добавить изображение</label>
                 <input type="file" id="file">
+                <div class="btn-wrapper">
+                    <input type="button" id="add-btn" value="Добавить">
+                    <input type="button" id="cancel-btn" value="Отмена">
+                </div>
             </form>
         </div>
     </div>
