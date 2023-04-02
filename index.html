@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <button class="add-item">Добавить товар</button>
+        </div>
+    </header>
+    <main>
+        <div class="catalog">
+            <div class="catalog-sidebar">
+                <div class="catalog-sidebar-filter">
+                    <h3>Фильтр товаров</h3>
+                    <ul>
+                        <li id="all"><a href='#'>Все товары</a></li>
+                        <li id="oes"><a href='#'>Одноразовые испарители</a></li>
+                        <li id="pod"><a href='#'>POD-системы</a></li>
+                        <li id="zhizha"><a href='#'>Жидкость</a></li>
+                        <li id="coml"><a href='#'>Комплектующие</a></li>
+                        <li id="acs"><a href='#'>Аксессуары</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="calatog-main">
+                <div class="catalog-wrapper">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="popup-add-item">
+        <div class="popup-wrapper">
+            <h2>Добавить товар</h2>
+            <form>
+                <label>Название товара</label>
+                <input type="text" id="title">
+                <label>Категория</label>
+                <select>
+                    <option>Одноразовые испарители</option>
+                    <option>POD-системы</option>
+                    <option>Жидкость</option>
+                    <option>Комплектующие</option>
+                    <option>Аксессуары</option>
+                </select>
+                <label>Цена</label>
+                <input type="text" id="price">
+                <label>Добавить изображение</label>
+                <input type="file" id="file">
+            </form>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
